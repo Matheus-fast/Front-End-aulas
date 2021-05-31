@@ -2,24 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
 
-@keyframes anim1 {
-    0%{background-color: green;}
-    20%{background-color: purple;}
-    40%{background-color: red;}
-    60%{background-color: blue;}
-    80%{background-color: cyan;}
-    100%{background-color: yellow;}
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: cyan;
 }
 
-.teste{
-    width: 400px;
-    height: 400px;
-    background-color: green;
-    animation-name: anim1;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
+@media screen and (max-width: 768px) {
+    .box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .box{
+        background-color: red;
+    }
 }
